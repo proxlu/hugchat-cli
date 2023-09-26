@@ -1,7 +1,7 @@
 #!/bin/python3
 # -*- coding: utf-8 -*-
 #
-# llama.py - by:proxlu
+# hugchat-cli.py - by:proxlu
 from hugchat import hugchat
 from hugchat.login import Login
 import sys
