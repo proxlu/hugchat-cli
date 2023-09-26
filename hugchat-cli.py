@@ -31,9 +31,9 @@ if arg:
 	# Execute o comando no terminal e suprime erros
 	saida = subprocess.check_output(comando, stderr=subprocess.DEVNULL)
 	saida_decodificada = saida.decode('utf-8')
+	saida_corrigida = saida_decodificada.replace('u003d', '=')
 	print()
-	print(saida_decodificada)
-
+	print('Llama:', saida_corrigida)
 else:
 	# Mensagem de introdução
 	print()
@@ -73,5 +73,7 @@ else:
 			comando = ['trans', '-b', saida_da_api]
 			saida = subprocess.check_output(comando, stderr=subprocess.DEVNULL)
 			saida_decodificada = saida.decode('utf-8')
+			saida_corrigida = saida_decodificada.replace('u003d', '=')
 			print()
-			print('Llama:', saida_decodificada)
+			print('Llama:', saida_corrigida)
+
