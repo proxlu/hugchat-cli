@@ -37,7 +37,7 @@ if arg:
 else:
 	# Mensagem de introdução
 	print()
-	print('[\'Oi, me chamo Llama, vamos conversar!\']')
+	print('[[Oi, me chamo Llama, vamos conversar!]]')
 	print('\'s\' ou \'sair\' para sair')
 	print('\'p\' ou \'protocolo\' para exibir o protocolo')
 	print('\'l\' ou \'limpar\' para limpar a conversa')
